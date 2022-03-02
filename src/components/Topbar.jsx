@@ -4,7 +4,7 @@ import {
   MailOutlined,
   AppstoreOutlined,
   SettingOutlined,
-  FieldTimeOutlined,
+  HomeOutlined,
   SmileOutlined,
   TrophyOutlined,
   TeamOutlined,
@@ -13,7 +13,6 @@ import {
 } from "@ant-design/icons";
 import { useNavigate } from 'react-router-dom'
 
-const { SubMenu } = Menu;
 
 export default function Topbar(props) {
   const [current, setCurrent] = useState( window.location.href.split("/")[3]);
@@ -24,7 +23,7 @@ export default function Topbar(props) {
 
   return (
     <Menu onClick={e => setCurrent(e.key)} selectedKeys={[current]} mode="horizontal" theme="dark">
-      <Menu.Item key="" icon={<MailOutlined />} onClick={() => navigate("/")}>
+      <Menu.Item key="" icon={<HomeOutlined />} onClick={() => navigate("/")}>
           Startseite
       </Menu.Item>
       <Menu.Item key="leistungen" icon={ <FormOutlined />} onClick={() => navigate("/leistungen")}>

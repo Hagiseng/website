@@ -24,14 +24,14 @@ export default function Topbar(props) {
 
   return (
     <Menu onClick={e => setCurrent(e.key)} selectedKeys={[current]} mode="horizontal" theme="dark">
-      <Menu.Item key="" icon={<MailOutlined />} onClick={() => navigate("/")}>
+      <Menu.Item key="" icon={<MailOutlined />} onClick={() => navigate("/datenschutz")}>
           Impressum und Datenschutz
       </Menu.Item>
       <Menu.Item key="leistungen" icon={ <FormOutlined />} onClick={() => navigate("/leistungen")}>
-        email@email.com
+        info@hagis-eng.de
       </Menu.Item>
       <Menu.Item key="leistungen" icon={ <FormOutlined />} onClick={() => navigate("/leistungen")}>
-        0176 451365
+        089/23065999
       </Menu.Item>
     </Menu>
   );

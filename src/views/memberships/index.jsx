@@ -27,11 +27,6 @@ const data = [
     pic: HWK,
     href: "https://www.hwk-muenchen.de/"
   },
-  {
-    title: "GBT Bauer",
-    pic: GBT,
-    href: "https://xn--gebudetechnik-bauer-iwb.de/"
-  },
 ];
 
 const isMobile = window.innerWidth < 800;
@@ -45,7 +40,7 @@ export default function Memberships() {
           <Divider/>
         <Grid container spacing={2} style={{ marginTop:"3%"}}>
           {data.map((c, i) => (
-            <Grid item xs={12} md={3}>
+            <Grid item xs={12} md={4}>
               <Card
                 hoverable
                 onClick={() => window.open(c.href)}
@@ -63,6 +58,30 @@ export default function Memberships() {
               </Card>
             </Grid>
           ))}
+
+        </Grid>
+
+        <Title style={{ marginTop:"3%"}}>Partnerschaften</Title>
+          <Divider/>
+        <Grid container spacing={2} style={{ marginTop:"3%"}}>
+        <Grid item xs={12} md={4} style={{marginBottom: "3%"}}>
+              <Card
+                hoverable
+                onClick={() => window.open("https://xn--gebudetechnik-bauer-iwb.de/")}
+                style={{ width: '100%' }}
+                cover={
+                  <img
+                    alt="example"
+                    src={GBT}
+                  />
+                }
+              >
+                <Meta
+                  title={"Gebäudetechnik Bauer GmbH"}
+                />
+              </Card>
+            </Grid>
+          
         </Grid>
       </Container>
     </div>

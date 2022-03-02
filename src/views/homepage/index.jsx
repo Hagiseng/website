@@ -9,6 +9,7 @@ import Planung from "../../pictures/planung.png"
 import Bau from "../../pictures/bau.png"
 import Bottombar from "../../components/Bottombar"
 import { Card } from "antd";
+import germany from '../../pictures/germany.png'
 
 const { Meta } = Card;
 
@@ -30,7 +31,10 @@ export default function Landingpage() {
           Partner für die Beratung und Planung der technischen Gebäudeausrüstung
           Ihres Bauvorhabens.
         </Typography>
-        <Grid container style={{ marginTop: "8%" }} spacing={6}>
+
+        <Title level={3}>Planung und Entwicklung nach deutscher Ingenieurskunst</Title>
+        <img src={germany} alt="germany" height={50}/>
+        <Grid container style={{ marginTop: "5%" }} spacing={6}>
           <Grid item xs={12} md={4}>
             <Card
               hoverable
@@ -50,7 +54,7 @@ export default function Landingpage() {
               cover={<img alt="example" src={Planung} />}
             >
               <Meta title="Planung" 
-              description="Unser Team überzeugt mit detailgetreuer, fachmännischer Kompetenz und plant Ihnen Ihr Bauvorhaben nach der anerkannten Technik der Regeln. Sowohl Neubauten als auch Modernisierungen begleiten wir durch alle Leistungsphasen der HOAI." />
+              description="Unser Team überzeugt mit detailgetreuer, fachmännischer Kompetenz und plant Ihnen Ihr Bauvorhaben nach den anerkannten Regeln der Technik. Sowohl Neubauten als auch Modernisierungen begleiten wir durch alle Leistungsphasen der HOAI." />
             </Card>
           </Grid>
           <Grid item xs={12} md={4}>
@@ -60,7 +64,7 @@ export default function Landingpage() {
               cover={<img alt="example" src={Bau} />}
             >
               <Meta title="Bauüberwachung"
-              description="Auch nach der Planung erstellen wir Ihnen ein umfangreiches und weit gedecktes Leistungsverzeichnis. Ebenfalls suchen wir eine passende ausführende Firma für Ihr Bauvorhaben. Das Projekt wird während des Bauprozesses von uns Überwacht und anschließend betreut, falls Sie dies wünschen." />
+              description="Auch nach der Planung erstellen wir Ihnen ein umfangreiches und weit gedecktes Leistungsverzeichnis. Ebenfalls suchen wir eine passende ausführende Firma für Ihr Bauvorhaben. Das Projekt wird während des Bauprozesses von uns überwacht und anschließend betreut." />
             </Card>
           </Grid>
         </Grid>

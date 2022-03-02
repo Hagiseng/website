@@ -37,6 +37,22 @@ const data = [
   {
     title: "Theresienstraße München",
     desc: "Sanierung von einem denkmalgeschützten Mehrfamilienhause (acht Wohnungen und zwei Gewerbeeinheiten) in der Theresienstraße München",
+  },
+  {
+    title: "Arnikaweg Ottobrunn",
+    desc: "Neubau von einem Einfamilienhaus im Arnikaweg Ottobrunn.",
+  },
+  {
+    title: "Villa Largia",
+    desc: "Sarnierung einer denkmalgeschützten Villa in Augsburg.",
+  },
+  {
+    title: "Mehrfamilienhaus in Welden",
+    desc: "Neubau eines Mehrfamilienhauses mit sieben Wohnungen und vier Gewerbeeinheiten in Welden.",
+  },
+  {
+    title: "Einfamilienhaus am Ammersee",
+    desc: "Neubau eines Einfamilienhauses am Ammersee.",
   }
 ];
 

@@ -62,13 +62,16 @@ export default function Leistungen() {
             style={{ paddingLeft: "5%", paddingRight: "5%", paddingTop: "3%" }}
           >
             <Title level={3} style={{ color: "white", textAlign: "justify" }}>
-              Planung und Beratung
+              Planung, Beratung und Bauüberwachung
             </Title>
             <Typography style={{ color: "white", textAlign: "justify" }}>
-              Planung und Beratung zu regenerativer Energietechnik, Wärmepumpen,
-              fossile Energieträger, Solarthermie und Photovoltaiksysteme,
-              Klima- und Lüftungstechnik, Heizungstechnik, Sanitärtechnik,
-              Kanalbau, Schwimmbadtechnik uvm.
+              Planung der technischen Gebäudeausrüstung im Wohnungs-, Industrie-, Hotel- und Gewerbebau. 
+              <br/>
+              Beratung bezüglich erneuerbaren Energien. 
+              <br/>
+              Bauüberwachung während der Ausführungszeit.
+              <br/>
+              Mordernisierung denkmalgeschützter Gebäude und Neubau.
             </Typography>
             <Title level={3} style={{ color: "white", textAlign: "justify" }}>
               Sämtliche Leistungen gemäß Leistungsbild der HOAI
@@ -76,25 +79,20 @@ export default function Leistungen() {
             <Typography style={{ color: "white", textAlign: "justify" }}>
               Grundlagenermittlung, Vor- und Entwurfsplanungen,
               Genehmigungsplanungen wie Entwässerungs- Eingabeplanung,
-              Ausführungsplanung zur Darstellung der ausführungsreifen
-              Planungslösung, Vorbereitung und Mithilfe zur Auftragsvergabe
-              (Leistungsverzeichnis, Funktionalbeschreibungen), Überwachung zur
-              Ausführung des Objektes und Dokumentation.{" "}
+              Ausführungsplanung, Vorbereitung der Vergabe
+              (Leistungsverzeichnis), Mitwirken bei der Vergabe, Bauüberwachung und Objektbetreuung.
             </Typography>
             <Title level={3} style={{ color: "white", textAlign: "justify" }}>
-              Beratung des Bauherren{" "}
+              Sachverständigung
             </Title>
             <Typography style={{ color: "white", textAlign: "justify" }}>
-              Beratung des Bauherren in allen Fragen rund um die Haustechnik
+              Gerne erstellen wir Ihnen ein Sachgutachten für Ihre haustechnischen Anlagen auf Basis einer Ortsbegehung.
             </Typography>
             <Title level={3} style={{ color: "white", textAlign: "justify" }}>
-              Erstellung von Energiepässen
+              CAD
             </Title>
             <Typography style={{ color: "white", textAlign: "justify" }}>
-              Planung und Beratung zu regenerativer Energietechnik, Wärmepumpen,
-              fossile Energieträger, Solarthermie und Photovoltaiksysteme,
-              Klima- und Lüftungstechnik, Heizungstechnik, Sanitärtechnik,
-              Kanalbau, Schwimmbadtechnik uvm.
+              Wir bieten Rohrnetzberechnungen, Strangschemen, Grundrisspläne und Detailzeichnungen an.
             </Typography>
           </Container>
         </Grid>
