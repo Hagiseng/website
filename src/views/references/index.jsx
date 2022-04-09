@@ -2,6 +2,7 @@ import React from "react";
 import Topbar from "../../components/Topbar";
 import { Grid, Container } from "@mui/material";
 import { Card, Typography, Divider } from "antd";
+import BottomBar from '../../components/Bottombar'
 
 const {Title} = Typography
 
@@ -73,6 +74,7 @@ export default function References() {
           ))}
         </Grid>
       </Container>
+      <BottomBar />
     </div>
   );
 }

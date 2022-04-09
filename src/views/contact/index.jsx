@@ -3,6 +3,7 @@ import Topbar from "../../components/Topbar";
 import { Container, Grid } from "@mui/material";
 import { Typography, Divider } from "antd";
 import { Form, Input, Button, Checkbox } from "antd";
+import BottomBar from '../../components/Bottombar'
 
 const { Title } = Typography;
 
@@ -66,10 +67,10 @@ export default function Memberships() {
               </Grid>
             </Grid>
           </Grid>
-          <Grid item xs={12} md={6}>
+{/*          <Grid item xs={12} md={6}>
             <Title level={3}>Kontaktformular</Title>
             <Divider />
-            <Grid container spacing={2}>
+             <Grid container spacing={2}>
               <Grid item xs={12}>
                 <Input placeholder="Firmenname" value={name} onChange={e => setName(e.target.value)}/>
               </Grid>
@@ -84,10 +85,11 @@ export default function Memberships() {
                   Kontakt aufnehmen
                 </Button>
               </Grid>
-            </Grid>
-          </Grid>
+            </Grid> 
+          </Grid>*/}
         </Grid>
       </Container>
+      <BottomBar margin={"6%"}/>
     </div>
   );
 }
