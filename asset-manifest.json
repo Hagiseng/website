@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.71d40b74.css",
+    "main.js": "/static/js/main.dc50426b.js",
+    "static/media/banner2.jpg": "/static/media/banner2.f4733d104f0c349819ce.jpg",
+    "static/media/planung.png": "/static/media/planung.a6fe36cc39fdb698ce6e.png",
+    "static/media/bau.png": "/static/media/bau.e2767deb9bc3198a1727.png",
+    "static/media/beratung.jpg": "/static/media/beratung.af5f5a067cae55da0dfe.jpg",
+    "static/media/alumni.png": "/static/media/alumni.c276c2c0e9bba187eaf2.png",
+    "static/media/hwk.png": "/static/media/hwk.d7bf9e727db4451e78d5.png",
+    "static/media/gbt.png": "/static/media/gbt.08b48934857e71e6a6a3.png",
+    "static/media/germany.png": "/static/media/germany.81fc594cd857b71a94e6.png",
+    "static/media/vdi.png": "/static/media/vdi.08cd98339d710d04ac1b.png",
+    "index.html": "/index.html",
+    "main.71d40b74.css.map": "/static/css/main.71d40b74.css.map",
+    "main.dc50426b.js.map": "/static/js/main.dc50426b.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.71d40b74.css",
+    "static/js/main.dc50426b.js"
+  ]
+}
