@@ -2,9 +2,10 @@ import React, {useState} from "react";
 import Topbar from "../../components/Topbar";
 import { Container, Grid } from "@mui/material";
 import { Typography, Divider } from "antd";
-import { Form, Input, Button, Checkbox } from "antd";
 import BottomBar from '../../components/Bottombar'
+import language from "../../utils/language"
 
+const lang = language.getLanguageJSON()
 const { Title } = Typography;
 
 const isMobile = window.innerWidth < 800;
@@ -35,32 +36,30 @@ export default function Memberships() {
       <Container
         style={{ textAlign: "center", marginTop: isMobile ? "15%" : "3%" }}
       >
-        <Title>Kontakt</Title>
+        <Title>{lang.contact.headline}</Title>
         <Divider />
         <Typography>
-          Ihre unverbindliche Anfrage: Nehmen Sie Kontakt mit uns auf, egal ob
-          Sie bereits ein konkretes Projekt haben oder noch ganz am Anfang
-          stehen. Wir freuen uns darauf, von Ihnen zu hören!
+          {lang.contact.subText}
         </Typography>
         <Grid container spacing={2} style={{ marginTop: "3%" }}>
           <Grid item xs={12} md={6}>
-            <Title level={3}>Kontaktdaten</Title>
+            <Title level={3}>{lang.contact.contactData.headline}</Title>
             <Divider />
             <Grid container spacing={2} style={{ textAlign: "justify" }}>
               <Grid item xs={12}>
-                <Title level={5}>E-Mail Adresse</Title>
+                <Title level={5}>{lang.contact.contactData.email}</Title>
                 <Typography>info@hagi-eng.de</Typography>
               </Grid>
               <Grid item xs={12}>
-                <Title level={5}>Festnetz</Title>
+                <Title level={5}>{lang.contact.contactData.phone}</Title>
                 <Typography>089/23065999</Typography>{" "}
               </Grid>
               <Grid item xs={12}>
-                <Title level={5}>Mobil</Title>
+                <Title level={5}>{lang.contact.contactData.mobile}</Title>
                 <Typography>0176 26174591 </Typography>{" "}
               </Grid>
               <Grid item xs={12}>
-                <Title level={5}>Anschrift</Title>
+                <Title level={5}>{lang.contact.contactData.address}</Title>
                 <Typography>Hagi's Engineering GmbH</Typography>
                 <Typography>Allacherstraße 33</Typography>
                 <Typography>80992 München</Typography>

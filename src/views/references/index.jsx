@@ -3,58 +3,49 @@ import Topbar from "../../components/Topbar";
 import { Grid, Container } from "@mui/material";
 import { Card, Typography, Divider } from "antd";
 import BottomBar from '../../components/Bottombar'
+import language from "../../utils/language";
+
+const lang = language.getLanguageJSON();
 
 const {Title} = Typography
 
 const data = [
   {
-    title: "Schellingstraße München",
-    desc: "Energetische Sanierung von einem Mehrfamilienhaus (30 Wohnungen und zwei Gewerbeeinheiten) in der Schellingstraße München",
+    title: lang.references.cards.schellingstreet.headline,
+    desc: lang.references.cards.schellingstreet.text
   },
   {
-    title: "Thuillerstraße München",
-    desc: "Neubau von einem Mehrfamilienhaus (vier Wohnungen) in der Thuillestraße München",
+    title: lang.references.cards.thuillerstreet.headline,
+    desc: lang.references.cards.thuillerstreet.text
   },
   {
-    title: "Bodenseestraße München",
-    desc: "Neubau von zwei Mehrfamilienhäusern (17 Wohnungen) mit einer gemeinsamen Tiefgarage in der Bodenseestraße München",
+    title: lang.references.cards.bodensee.headline,
+    desc: lang.references.cards.bodensee.text
   },
   {
-    title: "Friedenspromenade München",
-    desc: "Neubau von einem Mehrfamilienhaus (fünf Wohnungen) und einer Doppelhaushälfte in der Friedenspromenade in München",
+    title: lang.references.cards.peacePromenade.headline,
+    desc: lang.references.cards.peacePromenade.text
   },
   {
-    title: "Gars am Inn",
-    desc: "Neubau von zwei Mehrfamilienhäusern (zehn Wohnungen und eine Gewerbeeinheit) in Gars am Inn",
+    title: lang.references.cards.garsInn.headline,
+    desc: lang.references.cards.garsInn.text
   },
   {
-    title: "Jakob-Hagenbucher-Straße München",
-    desc: "Neubau von einem Einfamilienhaus in der Jakob-Hagenbucher-Str. in München",
+    title: lang.references.cards.jacobHagenbucher.headline,
+    desc: lang.references.cards.jacobHagenbucher.text
   },
   {
-    title: "Ludwigstraße München",
-    desc: "Neubau von einem Mehrfamilienhaus (18 Wohnungen und eine Gewerbeeinheit) in der Ludwigstraße in München",
+    title: lang.references.cards.largia.headline,
+    desc: lang.references.cards.largia.text
   },
   {
-    title: "Theresienstraße München",
-    desc: "Sanierung von einem denkmalgeschützten Mehrfamilienhause (acht Wohnungen und zwei Gewerbeeinheiten) in der Theresienstraße München",
+    title: lang.references.cards.welden.headline,
+    desc: lang.references.cards.welden.text
   },
   {
-    title: "Arnikaweg Ottobrunn",
-    desc: "Neubau von einem Einfamilienhaus im Arnikaweg Ottobrunn.",
+    title: lang.references.cards.ammersee.headline,
+    desc: lang.references.cards.ammersee.text
   },
-  {
-    title: "Villa Largia",
-    desc: "Sarnierung einer denkmalgeschützten Villa in Augsburg.",
-  },
-  {
-    title: "Mehrfamilienhaus in Welden",
-    desc: "Neubau eines Mehrfamilienhauses mit sieben Wohnungen und vier Gewerbeeinheiten in Welden.",
-  },
-  {
-    title: "Einfamilienhaus am Ammersee",
-    desc: "Neubau eines Einfamilienhauses am Ammersee.",
-  }
 ];
 
 export default function References() {

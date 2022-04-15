@@ -1,10 +1,11 @@
 import React from "react";
 import Topbar from "../../components/Topbar";
-import Image from "../../pictures/background_leistungen.jpg";
 import { Container, Grid } from "@mui/material";
 import { Divider, Typography } from "antd";
-import Bottombar from "../../components/Bottombar"
+import Bottombar from "../../components/Bottombar";
+import language from "../../utils/language";
 
+const lang = language.getLanguageJSON();
 const { Title } = Typography;
 
 const isMobile = window.innerWidth < 800;
@@ -18,11 +19,11 @@ export default function Leistungen() {
       <Container
         style={{ textAlign: "center", marginBottom: isMobile ? "15%" : "8%" }}
       >
-        <Title style={{ marginTop: isMobile ? "15%" : "8%"  }}>Leistungen</Title>
+        <Title style={{ marginTop: isMobile ? "15%" : "8%" }}>
+          {lang.services.headline}
+        </Title>
         <Divider />
-        <Typography>
-        Im Folgenden finden Sie eine grobe Zusammenfassung unserer Leistungsbilder. Unsere Dienstleistungen beziehen sich auf Projekte im Wohnbau, Gesundheitswesen und Industrie/Gewerbebau deutschlandweit.
-        </Typography>
+        <Typography>{lang.services.subText}</Typography>
       </Container>
       <Grid container spacing={2}>
         {!isMobile && (
@@ -40,11 +41,13 @@ export default function Leistungen() {
                 textAlign: "center",
               }}
             >
-              <Title style={{ color: "white" }}>Heizung</Title>
-              <Title style={{ color: "white" }}>Sanitär</Title>
-              <Title style={{ color: "white" }}>Lüftung</Title>
-              <Title style={{ color: "white" }}>Kälte/Klima</Title>
-              <Title style={{ color: "white" }}>Elektro</Title>
+              <Title style={{ color: "white" }}>{lang.services.heating}</Title>
+              <Title style={{ color: "white" }}>{lang.services.sanitary}</Title>
+              <Title style={{ color: "white" }}>
+                {lang.services.ventilation}
+              </Title>
+              <Title style={{ color: "white" }}>{lang.services.climate}</Title>
+              <Title style={{ color: "white" }}>{lang.services.electro}</Title>
             </Container>
           </Grid>
         )}
@@ -62,42 +65,36 @@ export default function Leistungen() {
             style={{ paddingLeft: "5%", paddingRight: "5%", paddingTop: "3%" }}
           >
             <Title level={3} style={{ color: "white", textAlign: "justify" }}>
-              Planung, Beratung und Bauüberwachung
+              {lang.services.planing.headline}
             </Title>
             <Typography style={{ color: "white", textAlign: "justify" }}>
-              Planung der technischen Gebäudeausrüstung im Wohnungs-, Industrie-, Hotel- und Gewerbebau. 
-              <br/>
-              Beratung bezüglich erneuerbaren Energien. 
-              <br/>
-              Bauüberwachung während der Ausführungszeit.
-              <br/>
-              Mordernisierung denkmalgeschützter Gebäude und Neubau.
+              {lang.services.planing.subText1} <br />
+              {lang.services.planing.subText2} <br />
+              {lang.services.planing.subText3} <br />
+              {lang.services.planing.subText4}
             </Typography>
             <Title level={3} style={{ color: "white", textAlign: "justify" }}>
-              Sämtliche Leistungen gemäß Leistungsbild der HOAI
+              {lang.services.hoaiServices.headline} <br />
             </Title>
             <Typography style={{ color: "white", textAlign: "justify" }}>
-              Grundlagenermittlung, Vor- und Entwurfsplanungen,
-              Genehmigungsplanungen wie Entwässerungs- Eingabeplanung,
-              Ausführungsplanung, Vorbereitung der Vergabe
-              (Leistungsverzeichnis), Mitwirken bei der Vergabe, Bauüberwachung und Objektbetreuung.
+              {lang.services.hoaiServices.subText} <br />
             </Typography>
             <Title level={3} style={{ color: "white", textAlign: "justify" }}>
-              Sachverständigung
+              {lang.services.expertOpinion.headline} <br />
             </Title>
             <Typography style={{ color: "white", textAlign: "justify" }}>
-              Gerne erstellen wir Ihnen ein Sachgutachten für Ihre haustechnischen Anlagen auf Basis einer Ortsbegehung.
+              {lang.services.expertOpinion.subText} <br />
             </Typography>
             <Title level={3} style={{ color: "white", textAlign: "justify" }}>
-              CAD
+              {lang.services.cad.headline} <br />
             </Title>
             <Typography style={{ color: "white", textAlign: "justify" }}>
-              Wir bieten Rohrnetzberechnungen, Strangschemen, Grundrisspläne und Detailzeichnungen an.
+              {lang.services.cad.subText} <br />
             </Typography>
           </Container>
         </Grid>
       </Grid>
-      <Bottombar/>
+      <Bottombar />
     </div>
   );
 }
